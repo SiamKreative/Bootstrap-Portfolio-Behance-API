@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bootstrap Portfolio with Behance API &amp; jQuery</title>
+
+	<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" rel="stylesheet">
+	<link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" rel="stylesheet">
+	<link href="vendor/prism.css" rel="stylesheet">
+
+	<!-- http://fontpair.co/ -->
+	<link href="//fonts.googleapis.com/css?family=Quando|Judson" rel="stylesheet">
+
+	<!-- Demo stylesheet -->
+	<link href="demo.css" rel="stylesheet">
+</head>
+
+<body class="demo">
+
+	<div class="demo-intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<a href="http://siamkreative.com/">
+						<img src="https://secure.gravatar.com/avatar/f634817190acb57d0f3e61e7c68eabbb?s=160" alt="Julien Vernet" class="avatar img-circle">
+					</a>
+					<h1>Bootstrap Portfolio<br> with Behance API &amp; jQuery</h1>
+					<p class="lead">If you're using Behance to showcase your projects and you would like to embed your portfolio on your site, look no further.</p>
+					<p>This quick example show you how to retrieve your projects from Behance using their API, store the data in the browser, and display it using Bootstrap 3 markup. To render the template we use jQuery, but you could also use a template engine such as <a href="http://beebole.com/pure/">pure.js</a> or <a href="http://handlebarsjs.com/">handlebars</a>. Find the most suitable template engine <a href="https://garann.github.io/template-chooser/">here</a>.</p>
+					<div class="btn-group" role="group">
+						<a href="#grid" class="btn btn-lg btn-default">Grid Layout</a>
+						<a href="#slider" class="btn btn-lg btn-primary">Slider Layout</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="demo-grid" id="grid">
+		<div class="container">
+			<h2>Grid Layout <small>Using Bootstrap Grid</small></h2>
+			<div id="be_grid" class="row be__portfolio be__grid">Loading...</div>
+		</div>
+	</div>
+
+	<div class="demo-slider" id="slider">
+		<div class="container">
+			<h2>Slider Layout <small>Using Slick Carousel</small></h2>
+			<div id="be_slider" class="row be__portfolio be__slider">Loading...</div>
+		</div>
+	</div>
+
+	<div class="demo-source" id="source">
+		<div class="container">
+			<h2>Source code</h2>
+			<!-- http://prismjs.com/plugins/file-highlight/ -->
+			<pre class="line-numbers" data-src=""></pre>
+		</div>
+	</div>
+
+	<div class="demo-comments">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h3>Leave your feedback below :)</h3>
+					<br>
+					<div id="disqus_thread"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/layzr.js/1.4.3/layzr.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.6/jquery.smooth-scroll.min.js"></script>
+	<script src="vendor/prism.js"></script>
+	<script src="jquery.behance.js"></script>
+	<script>
+	$(function() {
+		$('a').smoothScroll();
+	});
+	</script>
+	<script>
+	(function() {
+		var d = document, s = d.createElement('script');
+		s.src = '//siamkreative.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+	</script>
+
+</body>
+</html>

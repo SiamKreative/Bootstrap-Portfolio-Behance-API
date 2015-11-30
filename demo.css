@@ -1,0 +1,87 @@
+body {
+	font-family: 'Judson', serif;
+	font-size: 18px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+	font-family: 'Quando', serif;
+	font-size: 400;
+}
+.container {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+.avatar {
+	border: 10px solid #fff;
+	box-shadow: 0 0 1em rgba(0,0,0,.1);
+}
+.demo-intro .btn-group {
+	margin-top: 1em;
+}
+.demo-intro,
+.demo-comments {
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	text-align: center;
+	background: #f1f1f1 url('images/concrete_seamless.png');
+	padding: 5% 0;
+}
+.demo-grid,	
+.demo-slider,
+.demo-source {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.demo-grid h2,	
+.demo-slider h2 {
+	margin-top: 0;
+}
+.demo-slider {
+	color: white;
+	background: #424242 url('images/congruent_outline.png');
+}
+.demo-slider .slick-slider {
+	margin-bottom: 0px;
+}
+.demo-source pre {
+	border-radius: 0px;
+	font-size: 80%;
+}
+.be__grid .be__item {
+	margin-bottom: 30px;
+}
+.be__grid img,
+.be__slider img {
+	width: 100%;
+}
+/* Custom Bootstrap Column */
+@media (max-width: 480px) { 
+	.be__grid .col-xxs-12 {
+		display: block;
+		float: none;
+		width: 100%
+	}
+}
+@media (max-width: 768px) {
+	.slick-prev,
+	.slick-next {
+		width: 40px;
+		height: 40px;
+		margin-top: -20px;
+		z-index: 10;
+	}
+	.slick-prev {
+		left: 25px;
+	}
+	.slick-next {
+		right: 25px;
+	}
+	.slick-prev:before,
+	.slick-next:before {
+		font-size: 40px;
+	}
+}
+@media (min-width: 768px) {
+	.lead {
+		font-size: 130%;
+	}
+}
